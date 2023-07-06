@@ -1,6 +1,6 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
 <header>
@@ -9,10 +9,9 @@ import { SITE_TITLE } from '../consts';
 	</h2>
 	<nav>
 		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+		<HeaderLink href="https://github.com/higordevv" target="_blank">
+			GitHub
+		</HeaderLink>
 	</nav>
 </header>
 <style>
@@ -21,5 +20,9 @@ import { SITE_TITLE } from '../consts';
 	}
 	h2 {
 		margin: 0.5em 0;
+		color: #fff;
+	}
+	nav .link {
+		color: #ccc;
 	}
 </style>
